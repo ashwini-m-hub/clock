@@ -1,2 +1,2 @@
 # clock
-A analog
+An analog
