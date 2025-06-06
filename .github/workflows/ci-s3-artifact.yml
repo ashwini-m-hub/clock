@@ -22,7 +22,7 @@ jobs:
       - name: Upload ZIP to S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl public-read
+          args: --delete --exclude ".git/*" --exclude ".github/*"
         env:
           AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCES_ID}}
