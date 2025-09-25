@@ -1,2 +1,2 @@
 # clock
-An analog
+An analog for live time display
